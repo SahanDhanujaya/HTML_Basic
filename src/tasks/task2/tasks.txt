@@ -1,0 +1,9 @@
+01.Ordered List (ol) Tasks
+    Create an ordered list of your top 5 favorite foods.
+    Show the steps to make a cup of tea using an ordered list.
+    List your daily routine in order (wake up, breakfast, school/work, etc.).
+
+02.Unordered List (ul) Tasks
+    Create an unordered list of your hobbies.
+    Make a list of 5 shopping items you want to buy.
+    Show a list of social media platform links. When we click on the link, it should navigate to the official website of that platform.(Facebook, Instagram, etc.).

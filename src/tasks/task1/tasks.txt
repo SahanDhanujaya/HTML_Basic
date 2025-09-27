@@ -1,0 +1,27 @@
+Beginner Form Task 01
+
+01.Create A Basic Contact Form
+    Name (text input)
+    Email (email input)
+    Message (textarea)
+    Submit button
+
+02.Login Form
+    Username
+    Password
+    Login button
+    Registration Form
+
+03.Feedback Form
+    Name
+    Email
+    Rating (1–5 using radio buttons)
+    Feedback (textarea)
+    Submit
+
+04.Survey Form
+    Age
+    Favorite Color (color input)
+    Country (dropdown/select)
+    Agree to Terms (checkbox)
+    Submit
