@@ -1,0 +1,21 @@
+.title {
+  color: blue;
+}
+.card {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border: 2px solid black;
+}
+
+#card1 {
+  background-color: aqua;
+}
+
+.c1 {
+  background-color: green;
+}
+
+#card2 {
+  border: 4px dashed greenyellow;
+}

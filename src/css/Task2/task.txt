@@ -1,0 +1,18 @@
+Exercise 1:
+
+Personal Profile Card
+Goal: Create a simple profile card with your name, a short bio, and a profile image.
+
+What to practice:
+    Basic HTML structure (html, head, body)
+    Headings (h1, h2)
+    Paragraphs (p)
+    Images (img)
+    CSS styling (colors, fonts, spacing) you should learning about fonts, spacing 
+
+Challenge: Style the card with a border, background color, and center it on the page.
+
+Resources:
+    MDN Web Docs (developer.mozilla.org)
+    CSS-Tricks (css-tricks.com)
+    W3Schools (w3schools.com)
