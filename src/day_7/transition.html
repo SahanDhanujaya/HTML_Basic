@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        width: 200px;
+        height: 100px;
+        text-align: center;
+        background-color: lightgreen;
+        border: 2px solid black;
+        transition: all 2s ease-in-out 0.5s;
+
+    }
+
+    div:hover {
+        width: 400px;
+        background-color: green;
+        transform: scale(1.1);
+        font-size: 2rem;
+        transform: rotate(360deg);
+        transform: translateX(200px);
+        transform: skew(10deg, 30deg);
+        border-radius: 100%;
+        
+    }
+    @keyframes my-animation {
+        
+    }
+</style>
+
+<body>
+    <div>
+        click me!
+    </div>
+</body>
+
+</html>

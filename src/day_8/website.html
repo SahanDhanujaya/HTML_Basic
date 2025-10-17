@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/logos/about-star-yellow.png">
+    <title>Burger Shop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #hero {
+            height: 100vh;
+            background-image: url('../assets/images/vecteezy_the-delicious-burger-in-the-black-background-with_23010429.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0.9;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+        }
+
+        ul>li {
+            margin: 10px;
+        }
+
+        ul>li>a {
+            text-decoration: none;
+            color: white;
+        }
+
+        header button {
+            background-color: rgb(246, 172, 36);
+            border-radius: 5px;
+            padding: 2px;
+            color: white;
+            border: none;
+        }
+
+        a:hover {
+            color: rgb(246, 172, 36);
+            background-color: white;
+            border-radius: 5px;
+            opacity: 0.8;
+            padding: 3px;
+        }
+
+        hero h1 {
+            font-size: 2rem;
+        }
+
+        hero p {
+            width: 50%
+        }
+
+        hero>div {
+            background-color: rgba(192, 192, 192, 0.365);
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        hero button {
+            background-color: rgb(246, 172, 36);
+            border-radius: 5px;
+            padding: 5px;
+            color: white;
+            border: none;
+        }
+        #offers {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 100vh;
+        }
+        #offers>div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(43, 43, 43);
+            padding: 2rem;
+            color: white;
+        }
+        #offers>div>div {
+            margin:5px;
+        }
+        #offers>div>div:nth-child(1) {
+            margin: 2rem;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            border: 3px solid  yellow;
+            background-image: url('../assets/images/picture.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 0.5s linear ;
+        }
+        #offers>div div>h3 {
+            font-size: 2rem;
+        }
+        #offers>div div>button {
+            background-color: rgb(246, 172, 36);
+            border-radius: 5px;
+            padding: 2px;
+            color: white;
+            border: none;
+        }
+        #offers>div>div:nth-child(1):hover {
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+
+<body>
+    <section id="hero">
+        <header>
+            <nav>
+                <h2>Burger</h2>
+                <ul>
+                    <li>
+                        <a href="">HOME</a>
+                    </li>
+                    <li>
+                        <a href="">MENU</a>
+                    </li>
+                    <li>
+                        <a href="">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="">BOOK TABLE</a>
+                    </li>
+                </ul>
+                <div></div>
+                <button>Order Now</button>
+            </nav>
+        </header>
+        <hero>
+            <div>
+                <h1>Fast Food Restaurant</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequuntur distinctio magnam saepe
+                    temporibus accusantium reprehenderit non facilis similique, eligendi ipsam, nam doloremque
+                    voluptatum, quis eum natus nihil laudantium impedit.</p>
+                <button>Order Now</button>
+            </div>
+
+        </hero>
+    </section>
+    <section id="offers">
+
+        <div>
+            <div>
+
+            </div>
+            <div>
+                <h3>Tasty Thursdays</h3>
+                <h3>20% Off</h3>
+                <button>Order now</button>
+            </div>
+        </div>
+        <div>
+            <div>
+
+            </div>
+            <div>
+                <h3>Tasty Thursdays</h3>
+                <h3>20% Off</h3>
+                <button>Order now</button>
+            </div>
+        </div>
+
+        
+
+    </section>
+
+</body>
+
+</html>
