@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        document.write("Hello World");
+        document.write("<h1>This is a heading</h1>");
+        document.write("<p>This is a paragraph</p>");
+        alert("This is an alert box");
+
+        let name = prompt("Enter your name:");
+        document.write("<h2>Welcome " + name + "!</h2>");
+
+        document.write('hello "sahan" <br/>');
+        document.write("hello 'sahan'");
+
+        let x = 10 // variable declaration
+            {
+            let x ; // block scope variable
+            x = 20;
+            console.log('inner block', x);
+
+            x =30;
+            console.log('inner block after change', x);
+
+            let x = 40;
+            }
+        console.log('outer block', x);
+        let arr = [1,2,3,4,5];
+
+    </script>
+</body>
+</html>

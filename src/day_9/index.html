@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1 class="heading">Welcome to JavaScript</h1>
+    <section></section>
+    <img id="img" src="" alt="image">
+    <a href=""></a> 
+    <!-- 1st main  -->
+    <main>
+        <section class="sec">
+            1st Section
+        </section>
+    </main>
+    <!-- 2nd main  -->
+    <main>
+        <section class="sec">
+            2nd Section
+        </section>
+    </main>
+    <script>
+        document.getElementsByTagName('h1')[0].innerText = "Hello JavaScript";
+        const section = document.getElementsByTagName('section')[0];
+        section.innerHTML = "<div></div>";
+        section.getElementsByTagName('div')[0].style.width = "100px";
+        section.getElementsByTagName('div')[0].style.height = "100px";
+        section.getElementsByTagName('div')[0].style.backgroundColor = "yellow";
+        section.getElementsByTagName('div')[0].innerText = "Hello Div";
+        section.getElementsByTagName('div')[0].style.border = "1px solid black";
+
+        document.getElementById('img').src = "../../src/assets/images/picture.jpg";
+        document.getElementById('img').style.width = "300px";
+
+        document.getElementsByTagName('a')[0].href = "https://www.google.com";
+        document.getElementsByTagName('a')[0].innerText = "Go to Google";
+
+        document.querySelector('main>section').style.backgroundColor = "blue";
+        document.querySelector('main>section').style.width = "100px";
+        document.querySelector('main>section').style.height = "100px";
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const cars = ["Saab", "Volvo", "BMW"];
+        const fruits = new Array("Apple", "Banana", "Orange");
+        console.log(cars);
+        console.log(cars[0]);
+        console.log(cars[1]);
+        console.log(cars[2]);
+
+        let car = cars[1];
+        console.log("Selected car is: " + car);
+
+        cars[2] = "Toyota";
+        console.log(cars);
+
+        //push
+        cars.push("Audi");
+        console.log(cars);
+
+        //pop
+        cars.pop();
+        console.log(cars);
+        console.log("Number of cars: " + cars.length);
+
+        //concat
+        const allItems = cars.concat(fruits);
+        console.log(allItems);
+
+        //filter
+        const filteredCars = cars.filter(car => car.startsWith('V'));
+        console.log(filteredCars);
+
+        //findIndex
+        const toyotaIndex = cars.findIndex(car => car === "Toyota");
+        console.log("Index of Toyota: " + toyotaIndex);
+
+        //includes
+        if(cars.includes("Volvo")) {
+            console.log('Volvo is found');
+        } else {
+            console.log('Volvo is not found');
+        }
+
+        cars.includes("Volvo") ? console.log('Volvo is found') : console.log('Volvo is not found');
+
+        //join
+        console.log(cars.join(", "));
+
+        cars.forEach(car => {
+            console.log(car, ", ");
+        })
+
+
+        function findCar() {
+            let foundedCar = "";
+            cars.forEach(item => {
+                if (item === "Toyota") {
+                    foundedCar = item;
+                }
+            });
+            return foundedCar;
+        }
+
+        // const findCar = () => {
+        //     let foundedCar = ""; 
+        //     cars.forEach(item => {
+        //         if (item === "Toyota") {
+        //             foundedCar = item;
+        //         }
+        //     });
+        //     return foundedCar;
+        // }
+        console.log("Founded car: " + findCar());
+    </script>
+</body>
+
+</html>
