@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const products = [
+            { name: "Laptop", price: 150000, category: "electronics" },
+            { name: "Shoes", price: 7500, category: "fashion" },
+            { name: "Watch", price: 20000, category: "fashion" },
+            { name: "Phone", price: 95000, category: "electronics" },
+        ];
+
+        const discountedArrayList = () => {
+            return products.map(item => {
+                let discount = 0;
+                if (item.category === 'fashion') {
+                    discount = 0.10;
+                }
+                else if (item.category === 'electronics' && item.price > 100000) {
+                    discount = 0.05;
+                }
+
+                const discountedPrice = item.price - item.price * discount;
+
+                return {
+                    name: item.name,
+                    originalPrice: item.price,
+                    discountedPrice: discountedPrice,
+                    discountAmount: item.price - discountedPrice
+                };
+            });
+        };
+
+        const subDiscountedPrice = discountedArrayList();
+        const totalDiscount = subDiscountedPrice.reduce((sum, item) => sum + item.discountAmount, 0);
+
+        console.log("Total Discount Given:", totalDiscount);
+        console.table(subDiscountedPrice);
+
+
+
+
+    </script>
+</body>
+
+</html>
